@@ -66,10 +66,10 @@ Click the `Jerry mode` button. The screen will clear, balloons appear and the Je
 I treated the Rick and Morty character set as static. The application fetches the entire character database once and caches it. This helps to prioritse filtering speed and reduces API overhead, assuming that new characters are not added to the upstream API in real time during a user session.
 
 ### Challenges
-Pagination loop
+Pagination loop:
 The API doesn't give me all the characters at once. Instead it gives them in chunks of 20. I had to write a `while` loop in my `api_manager` to follow the breadcrumbs until the end is reached.
 
-API Rate Limiting
+API Rate Limiting:
 To ensure that every user interaction doesn't trigger a new API call, I used `@st.cache_data` on the `get_all_characters` function to take a snapshot of the whole multiverse at once and keep it in memory.
 
 
