@@ -4,6 +4,11 @@ import streamlit as st
 from character import Character
 
 class RickAndMortyAPI:
+    """
+    A class to interface with the Rick and Morty REST API.
+    Handles data fetching, pagination, and transformation into tabular formats.
+    """
+
     BASE_URL = "https://rickandmortyapi.com/api/character"
 
     @st.cache_data
