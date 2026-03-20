@@ -40,7 +40,7 @@ The app follows a functional modular architecture to ensure the UI is decoupled 
 - `api_manager.py`: A dedicated wrapper class handling all REST API logic, pagination, and conversion to Pandas DataFrames.
 
 - `app.py`: The main entry point, structured into distinct stages:
-    - Initialization: Setting up page configs.
+    - Initialisation: Setting up page configs.
     - Data Layer: Using @st.cache_data to prevent redundant API pings.
     - State Management: Handling sidebar inputs and filtering logic.
     - View Layer: Modular functions (render_visuals, render_table) for a clean UI
