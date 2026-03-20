@@ -20,7 +20,7 @@ git clone https://github.com/lukeai-tan/rick-and-morty-dashboard.git
 
 2. Install dependencies
 ```bash
-pip install streamlit plotpy pandas
+pip install streamlit plotly pandas requests
 ```
 
 3. Run the app
